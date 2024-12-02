@@ -227,9 +227,15 @@ export class ControladorUsuarios {
 
     // Cerrar sesión del usuario
     cerrarSesion = async (req, res) => {
+        const cookieOptions = {
+            httpOnly: true,
+            secure: true,
+            sameSite: 'None',
+        };
+
         try {
             // Eliminar la cookie que contiene el token
-            res.clearCookie('token', { httpOnly: true, secure: process.env.NODE_ENV === 'production' });
+            res.clearCookie('token', cookieOptions);
             res.status(200).json({
                 mensaje: 'Sesión cerrada exitosamente'
             });
