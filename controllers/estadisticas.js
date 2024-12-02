@@ -18,7 +18,7 @@ export class ControladorEstadisticas {
             res.status(500).json({ mensaje: err.message });
         }
     }
-
+    
     obtenerEstadisticasUsuario = async (req, res) => {
         const usuarioID = req.usuario.id;
         
@@ -32,7 +32,7 @@ export class ControladorEstadisticas {
                 cantidad_comentarios: comentarios.cantidad
             })
         } catch (error) {
-            
+            res.status(500).json({ mensaje: err.message });
         }
     }
 }
