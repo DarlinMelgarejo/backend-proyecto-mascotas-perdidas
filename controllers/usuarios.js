@@ -206,8 +206,15 @@ export class ControladorUsuarios {
                 { expiresIn: expiracion }
             );
 
+            const cookieOptions = {
+                httpOnly: true,
+                secure: true,
+                sameSite: 'None',
+            };
+            
             // Guardar el token en una cookie
-            res.cookie('token', token, { httpOnly: true, secure: process.env.NODE_ENV === 'production' }); // `secure` para producción
+            res.cookie('token', token, cookieOptions);
+            
             res.status(200).json({
                 mensaje: 'Inicio de sesión exitoso',
                 usuario: usuarioEncontrado // Devolver el perfil completo del usuario
