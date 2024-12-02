@@ -1,0 +1,47 @@
+### Obtener una imagen de una mascota
+GET http://localhost:5000/uploads/1728499340307.jpg
+
+### Registrar una nueva mascota
+POST http://localhost:5000/api/reportes-mascotas/registrar
+Content-Type: application/json
+
+{
+    "fecha_reporte": "2024-10-05",
+    "nombre_mascota": "Firulais",
+    "especie_mascota": "Perro",
+    "raza_mascota": "Golden Retriever",
+    "color_mascota": "Dorado",
+    "sexo_mascota": "Macho",
+    "edad_mascota": "2 años y 1 mes",
+    "descripcion_mascota": "Perro de gran tamaño, muy amigable",
+    "estado_mascota": "Perdido",
+    "procedencia_mascota": "San Pedro de Lloc",
+    "ubicacion_mascota": "Jirón Manuel Herrera, San Pablo, San Pedro de Lloc, Pacasmayo, La Libertad, Perú",
+    "latitud_ubicacion": -7.42423527858645,
+    "longitud_ubicacion": -79.50224295258523,
+    "url_imagen": "https://images.squarespace-cdn.com/content/v1/5baffc59fb182025fee90fef/0d2bc469-e090-4b1a-a8c1-71b14f2e6e9e/training-golden-retrievers.jpg",
+    "usuario_id": "Z4Gwtcaq2pi7zrop8MNA",
+    "estado": "Perdido"
+}
+
+### Obtener todas las mascotas
+GET http://localhost:5000/api/reportes-mascotas
+
+### Obtener una mascota por ID
+GET http://localhost:5000/api/reportes-mascotas/aa1dcc36-a7b6-11ef-958a-b4b686fdb4bc
+
+### Actualizar una mascota por ID
+PATCH http://localhost:5000/api/mascotas/e0108dd2-8399-11ef-971a-b4b686fdb4bc
+Content-Type: application/json
+
+{
+    "nombre": "Firulais Actualizado",
+    "raza": "Golden Retriever",
+    "color": "Dorado Oscuro",
+    "descripcion": "Actualización: muy amigable",
+    "estado": "encontrado",
+    "ubicacion": "Cerca del parque central"
+}
+
+### Eliminar una mascota por ID (eliminación lógica)
+DELETE http://localhost:5000/api/mascotas/e0108dd2-8399-11ef-971a-b4b686fdb4bc

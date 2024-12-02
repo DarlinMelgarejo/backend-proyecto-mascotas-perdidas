@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "proyecto-mascotas-perdidas",
+  "private_key_id": "3aebc6044b02e37381ae51d24322ae3cd7493f3a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCh9c+Eau/QfA9x\nUWnou5sQoofICW22jOxzDLTY3R/X+/a+GH/KXG1pWpYcwJ+SwAHY/HSo2Ter76Q1\nJ0Kzbp6uUZaD/NRS7b57n9oWOTzFRbcWjVCreAjkEHZIX1aJNXLlzEIh/RN55pn/\nCWaiQU4aqCUokCCinfN27CVvVmFCKB+A/q1WxHKgvANfUgIsUlvxuGh1yfvcmXwp\n93/aYWtTSh3qAn61+xe92w/wHBrHneDtaVyJv7jxDaWTS1aFq+5YTMrh9V/bHFgZ\nHQbmzAWg4vnEqi0Qaw4GEp/L3X2kDcrJT5tCMtDNABCVGwPgv/FAjwe6b8LVzOsu\nbj3q9zcnAgMBAAECggEAKYCuDsbAcXJ5Gpa8RxFcKSUdGlugK7ltFgZZiYEQme5N\nSmVIyfhpaSf3c6LAwYBGeO4ojuQq6fpc3+oRo51jOFRb97KgTifyOge6gRtlwT+e\nLT9FPsthq9+0D9OufzadHNn80GzjwscfC0XDcSy+8QHJk91rH4DOVNkqtp8yCRuK\nYcSBZtMJCIaWcGlJX1+gsaeD+j8JMfMtWrpxGshBnI9xCvMW0e0C8AUXp5M8SGFM\nzGx4aEmkZfEaXtOHOj1fGPX3gSPVrXfsgDt9V1a11vkFvhkoXnUk0LAvsbAcSGr/\nDfZGOc2VYDxjzk06HiPY2BhSWNUYRxikjQlDWWBaMQKBgQDbTmmB6vIiCBtZnCzs\nf0WlP1wZnlGWllYpZSUACA6B+KWV5bca0UiP6v/2sbhKNPO4tqroyJ7oXErDWuPk\nSCtQV8sF9eUFxXTIoUUboJT1PZQ0xmEPDmyPbc1TI+vQ0YO3dYm1HjDyCuDetf9k\nAu4f7hLj8QgEOhCXOhEMG4BxUwKBgQC9DxULirqRS+W7bffYWzzSPMyY9ZtIBbdW\nVlcXFG36YkdmOytSQZ/jyZZa7uWCSbcoN9J4Mae9eNe7aU6RZs2jPZ4GDl81ofZP\nG4dZIxfbltFVsskvsjeENP1QSTF0Wi/2tztsfvvQ1BUSjP2Ozal3376Irm7FKP+t\n5XVtCXxEXQKBgQDIUA30+fnidc8tgYZTGkkuD/p69+4EAxt+QgGSzskZlFkC2sjt\n+N0zf23/EgOH3GgFfuwLJjxndu1fFOT1fan6f8ZUkm53YA00uIFcI8gLXQzDS7QZ\nwY4NUDjsSPI7UTPjXbvDsGj6nE8bfddhrX99sMKWa3FsEvFWgFZT3cbrOwKBgQCw\n4GVuEPKPcRSTkESqlGGIx/0atd37Oe3WxpxgKWrjMANgr8bOBDuUn0sd9BehF1pW\nNDOi48HtUBt1aQZqnmWRbdpkDBojUU3hoP219VEizi03Ijd7eh7af8Dm1jOAicgJ\n6E+eKAdrzp+QZXvrmJoOXrQhqCBWMQ9UIDMGOjOauQKBgQCU9d5qz3KoQtcG5ZfJ\nc0i2uhfi+RP+8JDoC4t495dbBU7qXyP/R4TBoTKzdVUAJaZMjtAzxqCOHVwphL76\n3st5MFyLuAt2xBqd9ycusKllwishStxrjL8UA67bEhHa0HKBPeyNFOhwBSB1UVaW\nd1l+QtfpOoUERbRNqFgyCPyELg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-6946j@proyecto-mascotas-perdidas.iam.gserviceaccount.com",
+  "client_id": "118354491463076147591",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-6946j%40proyecto-mascotas-perdidas.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

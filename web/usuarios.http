@@ -1,0 +1,54 @@
+### Verificar si un usuario esta logeado
+GET http://localhost:5000/api/usuarios/verificado
+
+### Registrar un nuevo usuario
+POST http://localhost:5000/api/usuarios/registrar
+Content-Type: application/json
+
+{
+    "dni": "76251369", 
+    "contraseña": "12345678",
+    "nombres": "Darlin Yeilin", 
+    "apellidos": "Melgarejo Miranda", 
+    "correo": "dymm.latino14@gmail.com", 
+    "telefono": "912851961",
+    "procedencia": "San Pedro de Lloc",
+    "direccion": "Urb. la Quinta Mz 6 Lt 1"
+}
+
+### Logear un usuario
+POST http://localhost:5000/api/usuarios/logear
+Content-Type: application/json
+
+{
+    "dni": "76251369", 
+    "contraseña": "12345678"
+}
+
+### Cerrar sesión del usuario
+POST http://localhost:5000/api/usuarios/cerrar-sesion
+
+### Obtener todos los usuarios
+GET http://localhost:5000/api/usuarios
+
+### Obtener un usuario por id
+GET http://localhost:5000/api/usuarios/Z4Gwtcaq2pi7zrop8MNA
+
+### Obtener perfil de un usuario logeado
+GET http://localhost:5000/api/usuarios/perfil
+
+### Actualizar un usuario por ID
+PATCH  http://localhost:5000/api/usuarios/d26b6ccb-8399-11ef-971a-b4b686fdb4bc
+Content-Type: application/json
+
+{
+    "usuario": "dymm05_updated", 
+    "nombres": "Darlin Yeilin Updated", 
+    "apellidos": "Melgarejo Miranda Updated", 
+    "dni": "76251369", 
+    "correo": "dymm.updated@gmail.com", 
+    "rol": "admin"
+}
+
+### Eliminar un usuario por ID
+DELETE http://localhost:5000/api/usuarios/d26b6ccb-8399-11ef-971a-b4b686fdb4bc

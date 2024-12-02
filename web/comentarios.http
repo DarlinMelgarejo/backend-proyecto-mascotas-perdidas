@@ -1,0 +1,26 @@
+### Registrar un nuevo comentario
+POST http://localhost:5000/api/comentarios/registrar
+Content-Type: application/json
+
+{
+    "contenido": "Este perro parece estar muy bien cuidado, lo vi en el parque central.",
+    "usuario_id": "d26b6ccb-8399-11ef-971a-b4b686fdb4bc",
+    "mascota_id": "e0108dd2-8399-11ef-971a-b4b686fdb4bc"
+}
+
+### Obtener todos los comentarios
+GET http://localhost:5000/api/comentarios
+
+### Obtener un comentario por ID
+GET http://localhost:5000/api/comentarios/a5208588-841b-11ef-a17b-b4b686fdb4bc
+
+### Actualizar un comentario por ID
+PATCH http://localhost:5000/api/comentarios/a5208588-841b-11ef-a17b-b4b686fdb4bc
+Content-Type: application/json
+
+{
+    "contenido": "Actualización: Lo vi también cerca del mercado."
+}
+
+### Eliminar un comentario por ID (eliminación lógica)
+DELETE http://localhost:5000/api/comentarios/a5208588-841b-11ef-a17b-b4b686fdb4bc

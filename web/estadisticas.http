@@ -1,0 +1,5 @@
+### Obtener la cantidad de reportes
+GET http://localhost:5000/api/estadisticas
+
+### Obtener la cantidad de reportes
+GET http://localhost:5000/api/estadisticas/3b5745d9-b031-11ef-b0dd-b4b686fdb4bc
