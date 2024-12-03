@@ -124,7 +124,7 @@ export class ControladorReportesMascotas {
         const numeroRegistros = req.params.n;
 
         try {
-            const reportes = await this.modeloReportesMascotas.obtenerAlgunosReportesDeUnUsuario(usuarioID, Number(numeroRegistros));
+            const reportes = await this.modeloReportesMascotas.obtenerAlgunosReportesDeUnUsuario(usuarioID, numeroRegistros);
             res.status(200).json({
                 mensaje: `Últimos ${numeroRegistros} reportes obtenidos exitosamente`,
                 reportes: reportes  // Devolvemos los últimos n reportes del usuario
