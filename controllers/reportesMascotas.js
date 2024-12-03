@@ -130,7 +130,7 @@ export class ControladorReportesMascotas {
                 reportes: reportes  // Devolvemos los últimos n reportes del usuario
             });
         } catch (err) {
-            //console.log(err)
+            console.log(err)
             res.status(500).json({ mensaje: err.message });
         }
     }
