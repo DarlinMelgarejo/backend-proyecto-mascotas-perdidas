@@ -217,7 +217,8 @@ export class ControladorUsuarios {
             
             res.status(200).json({
                 mensaje: 'Inicio de sesión exitoso',
-                usuario: usuarioEncontrado // Devolver el perfil completo del usuario
+                usuario: usuarioEncontrado,
+                token: token
             });
             
         } catch (err) {
