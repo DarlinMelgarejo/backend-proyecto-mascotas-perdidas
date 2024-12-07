@@ -1,9 +1,16 @@
 import jwt from 'jsonwebtoken';
 
 export const verificarToken = (req, res, next) => {
-    // Obtener el token de la cookie
-    console.log(req.cookies)
-    const token = req.cookies.token; // Se asume que estás utilizando `cookie-parser` middleware
+    // Primero intentar obtener el token de las cookies (para la web)
+    let token = req.cookies.token;
+
+    // Si no se encuentra en las cookies, intentar obtenerlo de las cabeceras (para aplicaciones móviles)
+    if (!token && req.headers.authorization) {
+        // La cabecera de autorización generalmente tiene el formato "Bearer <token>"
+        const authHeader = req.headers.authorization;
+        token = authHeader && authHeader.split(' ')[1]; // Obtener el token después de "Bearer"
+    }
+
     if (!token) {
         return res.status(401).json({ mensaje: 'Acceso denegado. No se proporcionó un token.' });
     }
